@@ -1180,28 +1180,28 @@ OldIndex = hookmetamethod(game, "__index", function(Self, Index)
     return OldIndex(Self, Index)
 end)
 
-OldNamecall = hookmetamethod(game, "__namecall", function(Self, ...)
-    local Method = getnamecallmethod()
+-- OldNamecall = hookmetamethod(game, "__namecall", function(Self, ...)
+--     local Method = getnamecallmethod()
 
-    --[[
-    if Method == "FireServer" then
-        local Args = {...}
-        if type(Args[1]) == "table" then
-            print("framework check")
-            return
-        end
-    end
-    ]]
+--     --[[
+--     if Method == "FireServer" then
+--         local Args = {...}
+--         if type(Args[1]) == "table" then
+--             print("framework check")
+--             return
+--         end
+--     end
+--     ]]
 
-    if Method == "GetChildren"
-    and (Self == ReplicatedFirst
-    or Self == ReplicatedStorage) then
-        error("crash bypass")
-        return Instance.new("BindableEvent").Event:Wait()
-    end
+--     if Method == "GetChildren"
+--     and (Self == ReplicatedFirst
+--     or Self == ReplicatedStorage) then
+--         error("crash bypass")
+--         return Instance.new("BindableEvent").Event:Wait()
+--     end
 
-    return OldNamecall(Self, ...)
-end)
+--     return OldNamecall(Self, ...)
+-- end)
 
 local OldSend; OldSend = hookfunction(Network.Send, newcclosure(function(Self, Name, ...)
     if table.find(SanityBans, Name) then print("bypassed", Name) return Instance.new("BindableEvent").Event:Wait() end
