@@ -1202,8 +1202,8 @@ OldNamecall = hookmetamethod(game, "__namecall", function(Self, ...)
 end)
 
 local OldSend; OldSend = hookfunction(Network.Send, newcclosure(function(Self, Name, ...)
-    if table.find(SanityBans, Name) then print("bypassed", Name) return end
-    if Name == "Character Jumped" and Window.Flags["AR2/SSCS"] then return end
+    if table.find(SanityBans, Name) then print("bypassed", Name) return Instance.new("BindableEvent").Event:Wait() end
+    if Name == "Character Jumped" and Window.Flags["AR2/SSCS"] then return Instance.new("BindableEvent").Event:Wait() end
 
     if Name == "Vehicle Bumper Impact" then
         if Window.Flags["AR2/Vehicle/Impact"] then
