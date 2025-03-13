@@ -194,9 +194,11 @@ local RandomEvents, ItemCategory, ZombieInherits, SanityBans, AdminRoles = {
     {"Presets.Skin Tone LightMidDark", false}, {"Presets.Skin Tone Mid", false}, {"Presets.Skin Tone MidDark", false}, {"Presets.Skin Tone Servant", false}
 },
 {
-    "Chat Message Send", "Ping Return", "Bullet Impact Interaction", "Crouch Audio Mute", "Zombie Pushback Force Request", "Camera CFrame Report",
-    "Movestate Sync Request", "Update Character Position", "Map Icon History Sync", "Playerlist Staff Icon Get", "Request Physics State Sync",
-    "Inventory Sync Request", "Wardrobe Resync Request", "Door Interact ", "Sorry Mate, Wrong Path :/", "Melee Combo Reset"
+"Chat Message Send", "Ping Return", "Bullet Impact Interaction", "Crouch Audio Mute", "Zombie Pushback Force Request", "Camera CFrame Report",
+"Movestate Sync Request", "Update Character Position", "Map Icon History Sync", "Playerlist Staff Icon Get", "Request Physics State Sync",
+"Inventory Sync Request", "Wardrobe Resync Request", "Door Interact ", "Sorry Mate, Wrong Path :/", "Melee Combo Reset", "Character Humanoid Update",
+"Character Root Update", "Get Player Stance Speed", "Force Charcter Save", "Update Character State", "Sync Near Chunk Loot", "Zombie State Resync Attempt",
+"Resync Character Physics", "Resync Leaderboard", "Sync Debug Info", "Statistic Report", "Animator State Desync Check"
 },
 {
     [110] = "Contractor",
