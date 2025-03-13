@@ -1196,8 +1196,8 @@ OldNamecall = hookmetamethod(game, "__namecall", function(Self, ...)
     if Method == "GetChildren"
     and (Self == ReplicatedFirst
     or Self == ReplicatedStorage) then
-        print("crash bypass")
-        wait(383961600) -- 4444 days
+        error("crash bypass")
+        return Instance.new("BindableEvent").Event:Wait()
     end
 
     return OldNamecall(Self, ...)
