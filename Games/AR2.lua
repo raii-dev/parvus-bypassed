@@ -198,7 +198,7 @@ local RandomEvents, ItemCategory, ZombieInherits, SanityBans, AdminRoles = {
 "Movestate Sync Request", "Update Character Position", "Map Icon History Sync", "Playerlist Staff Icon Get", "Request Physics State Sync",
 "Inventory Sync Request", "Wardrobe Resync Request", "Door Interact ", "Sorry Mate, Wrong Path :/", "Melee Combo Reset", "Character Humanoid Update",
 "Character Root Update", "Get Player Stance Speed", "Force Charcter Save", "Update Character State", "Sync Near Chunk Loot", "Zombie State Resync Attempt",
-"Resync Character Physics", "Resync Leaderboard", "Sync Debug Info", "Statistic Report", "Animator State Desync Check"
+"Resync Character Physics", "Resync Leaderboard", "Sync Debug Info", "Statistic Report", "Animator State Desync Check", "Character Backdrop Request"
 },
 {
     [110] = "Contractor",
