@@ -196,7 +196,7 @@ local RandomEvents, ItemCategory, ZombieInherits, SanityBans, AdminRoles = {
 {
     "Chat Message Send", "Ping Return", "Bullet Impact Interaction", "Crouch Audio Mute", "Zombie Pushback Force Request", "Camera CFrame Report",
     "Movestate Sync Request", "Update Character Position", "Map Icon History Sync", "Playerlist Staff Icon Get", "Request Physics State Sync",
-    "Inventory Sync Request", "Wardrobe Resync Request", "Door Interact ", "Sorry Mate, Wrong Path :/", "Melee Combo Reset", "Character Humanoid Update", "Character Root Update", "Get Player Stance Speed"
+    "Inventory Sync Request", "Wardrobe Resync Request", "Door Interact ", "Sorry Mate, Wrong Path :/", "Melee Combo Reset"
 },
 {
     [110] = "Contractor",
